@@ -1,3 +1,5 @@
+from django.contrib.auth.decorators import login_required
+from rolepermissions.decorators import has_permission_decorator
 from django.shortcuts import render
 
 
@@ -8,6 +10,7 @@ def loja_listar(request):
 def loja_exibir(request):
     return render(request, template_name='exibir.html')
 
-
-def loja_inserir_produto(request):
-    pass
+# @login_required
+@has_permission_decorator('cadastrar_produtos')
+def cadastrar_produtos(request):
+    return render(request, template_name='cadastrar_produtos.html')

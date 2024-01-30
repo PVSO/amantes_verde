@@ -2,188 +2,92 @@
 {% load static %}
 
 {% block content %}
-    <main id="page-top">
+    <div class="index-container">
+        <header>
+            <img class="logo_index" src="{% static 'image/Logo_2.png' %}" alt="Logo">
+            <span>Amantes do Verde: Uma plataforma para indexar distribuidores e suas plantas ornamentais</span>
+            <a href="{% url 'amantes:logar' %}" class="btn btn-primary">
+                Autentique-se
+            </a>
+        </header>
+        <h1>Produtos</h1>
+        <ul>
+            <li>
+                <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
+                <strong>CASO</strong>
+                <p>title</p>
+                <strong>Descrição</strong>
+                <p>{incident.description}</p>
+                <strong>Descrição</strong>
+                <p>{incident.description}</p>
+                <strong>Descrição</strong>
+                <p>{incident.description}</p>
+            </li>
+            <li>
+                <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
+                <strong>CASO</strong>
+                <p>title</p>
 
-        <!-- Topbar -->
-        <nav class="navbar">
+                <strong>Descrição</strong>
+                <p>{incident.description}</p>
+            </li>
+            <li>
+                <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
+                <strong>CASO</strong>
+                <p>title</p>
 
-            <img class="logo_index" src="{% static 'image/Logo_1.png' %}" alt="Logo">
+                <strong>Descrição</strong>
+                <p>{incident.description}</p>
+            </li>
+            <li>
+                <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
+                <strong>CASO</strong>
+                <p>title</p>
 
-            <div class="auth">
-                <div class="bemvindo">
-                    Seja Bem-vindo(a)
-                </div>
-                <a href="#" class="btn btn-primary">
-                    Entrar
-                </a>
-                <a href="#" class="btn btn-primary">
-                    Cadastre-se
-                </a>
-            </div>
-        </nav>
-        <!-- End of Topbar -->
+                <strong>Descrição</strong>
+                <p>{incident.description}</p>
+            </li>
+            <li>
+                <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
+                <strong>CASO</strong>
+                <p>title</p>
 
-        <div class="container-fluid">
+                <strong>Descrição</strong>
+                <p>{incident.description}</p>
+            </li>
+            <li>
+                <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
+                <strong>CASO</strong>
+                <p>title</p>
 
-            <!-- Area Chart -->
-            <div class="col-xl-12 col-lg-12">
-                <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h1 class="m-0 font-weight-bold text-primary">Produtos</h1>
-                        <div class="dropdown no-arrow">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                 aria-labelledby="dropdownMenuLink">
-                                <div class="dropdown-header">Dropdown Header:</div>
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="card-body">
+                <strong>Descrição</strong>
+                <p>{incident.description}</p>
+            </li>
+            <li>
+                <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
+                <strong>CASO</strong>
+                <p>title</p>
 
-                        <div class="produto-imagem">
-                            <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
-                        </div>
-                        <div class="produto-conteudo">
-                            <strong>Produto</strong>
-                            <p>Rosa do Deserto</p>
-                            <strong>Loja</strong>
-                            <p>Ecoviveiros</p>
-                            <strong>Acesse</strong>
-                            <p><a class="small" href="/">Página do Produto</a></p>
-                        </div><div class="produto-imagem">
-                            <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
-                        </div>
-                        <div class="produto-conteudo">
-                            <strong>Produto</strong>
-                            <p>Rosa do Deserto</p>
-                            <strong>Loja</strong>
-                            <p>Ecoviveiros</p>
-                            <strong>Acesse</strong>
-                            <p><a class="small" href="/">Página do Produto</a></p>
-                        </div>
-                    </div>
-                    <div class="card-body">
+                <strong>Descrição</strong>
+                <p>{incident.description}</p>
+            </li>
+            <li>
+                <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
+                <strong>CASO</strong>
+                <p>title</p>
 
-                        <div class="produto-imagem">
-                            <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
-                        </div>
-                        <div class="produto-conteudo">
-                            <strong>Produto</strong>
-                            <p>Rosa do Deserto</p>
-                            <strong>Loja</strong>
-                            <p>Ecoviveiros</p>
-                            <strong>Acesse</strong>
-                            <p><a class="small" href="/">Página do Produto</a></p>
-                        </div><div class="produto-imagem">
-                            <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
-                        </div>
-                        <div class="produto-conteudo">
-                            <strong>Produto</strong>
-                            <p>Rosa do Deserto</p>
-                            <strong>Loja</strong>
-                            <p>Ecoviveiros</p>
-                            <strong>Acesse</strong>
-                            <p><a class="small" href="/">Página do Produto</a></p>
-                        </div>
-                    </div><div class="card-body">
-
-                        <div class="produto-imagem">
-                            <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
-                        </div>
-                        <div class="produto-conteudo">
-                            <strong>Produto</strong>
-                            <p>Rosa do Deserto</p>
-                            <strong>Loja</strong>
-                            <p>Ecoviveiros</p>
-                            <strong>Acesse</strong>
-                            <p><a class="small" href="/">Página do Produto</a></p>
-                        </div><div class="produto-imagem">
-                            <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
-                        </div>
-                        <div class="produto-conteudo">
-                            <strong>Produto</strong>
-                            <p>Rosa do Deserto</p>
-                            <strong>Loja</strong>
-                            <p>Ecoviveiros</p>
-                            <strong>Acesse</strong>
-                            <p><a class="small" href="/">Página do Produto</a></p>
-                        </div>
-                    </div>
-                    <div class="card-body">
-
-                        <div class="produto-imagem">
-                            <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
-                        </div>
-                        <div class="produto-conteudo">
-                            <strong>Produto</strong>
-                            <p>Rosa do Deserto</p>
-                            <strong>Loja</strong>
-                            <p>Ecoviveiros</p>
-                            <strong>Acesse</strong>
-                            <p><a class="small" href="/">Página do Produto</a></p>
-                        </div><div class="produto-imagem">
-                            <img class="imgproduto" src="https://github.com/PVSO.png" alt="produto-imagem">
-                        </div>
-                        <div class="produto-conteudo">
-                            <strong>Produto</strong>
-                            <p>Rosa do Deserto</p>
-                            <strong>Loja</strong>
-                            <p>Ecoviveiros</p>
-                            <strong>Acesse</strong>
-                            <p><a class="small" href="/">Página do Produto</a></p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-xl-12 col-lg-12">
-                <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h1 class="m-0 font-weight-bold text-primary">Lojas</h1>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="card-lojas">
-
-                        <ul>
-                            <li>Mapa com as lojas</li>
-                            <li>Mapa com as lojas</li>
-                            <li>Mapa com as lojas</li>
-                            <li>Mapa com as lojas</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                <strong>Descrição</strong>
+                <p>{incident.description}</p>
+            </li>
+        </ul>
+        <h1>Lojas na Cidade</h1>
+        <div class="card-lojas">
+            <ul>
+                <li>Mapa com as lojas</li>
+                <li>Mapa com as lojas</li>
+                <li>Mapa com as lojas</li>
+                <li>Mapa com as lojas</li>
+            </ul>
         </div>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
-
-        <!-- Bootstrap core JavaScript-->
-        {#        <script src="public\vendor\jquery\jquery.min.js"></script>#}
-        {#        <script src="public\vendor\bootstrap\js\bootstrap.bundle.min.js"></script>#}
-
-        <!-- Core plugin JavaScript-->
-        {#        <script src="public\vendor\jquery\easing\jquery.easing.min.js"></script>#}
-
-        <!-- Custom scripts for all pages-->
-        {#        <script src="public\js\sb-admin-2.min.js"></script>#}
-
-        <!-- Page level plugins -->
-        {#        <script src="public\vendor\chart.js\Chart.min.js"></script>#}
-
-        <!-- Page level custom scripts -->
-        {#        <script src="public\js/demo\chart-area-demo.js"></script>#}
-        {#        <script src="public\js\demo\chart-pie-demo.js"></script>#}
-    </main>
+    </div>
 {% endblock %}

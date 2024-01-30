@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-n#sm+pu21_rx3+5r7t7w9*r-ftp9*2njw3q$y1+0q6ht2%sxs8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.2.5']
+# ALLOWED_HOSTS = ['192.168.2.5']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -41,7 +42,8 @@ INSTALLED_APPS = [
     'amantes',
     'loja',
     'estoque',
-    'produto'
+    'produto',
+    'rolepermissions'
 ]
 
 MIDDLEWARE = [
@@ -117,16 +119,30 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# Configuração do PATH de Arquivos Static (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'templates/static'),
 ]
+
+# STATIC_ROOT = os.path.join('static')
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'templates/static/img/media')
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Configuração de Auth
+# LOGOUT_REDIRECT_URL = 'amantes:index'
+# LOGIN_REDIRECT_URL = 'loja:cadastrar_produtos'
+
+AUTH_USER_MODEL = 'amantes.Users'
+
+# Permissões de Papéis
+ROLEPERMISSIONS_MODULE = 'amantes_verde.roles'

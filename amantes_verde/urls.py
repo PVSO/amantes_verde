@@ -16,10 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+app_name = 'amantes'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('amantes.urls')),
     path('loja/', include('loja.urls')),
+    path('cliente/', include('cliente.urls')),
     # path('estoque/', include('estoque.urls')),
     # path('produto/', include('produto.urls')),
+    # path('contas/', include('django.contrib.auth.urls'), name='contas'),
 ]

@@ -1,11 +1,13 @@
-from django.urls import path
+from django.urls import path, include
 
 from . import views
 
 app_name = 'loja'
 
 urlpatterns = [
-    path('listar/', views.loja_listar, name='loja_listar'),
-    path('exibir/', views.loja_exibir, name='loja_exibir'),
-    path('<int:loja_pk>/inserir/produto', views.loja_inserir_produto, name='loja_inserir_produto')
+    # path('logar/', views.loja_logar, name='logar'),
+    # path('cadastrar/', views.loja_cadastrar, name='cadastrar'),
+    path('listar/', views.loja_listar, name='listar'),
+    path('exibir/', views.loja_exibir, name='exibir'),
+    path('inserir/produto', views.cadastrar_produtos, name='cadastrar_produtos'),
 ]
